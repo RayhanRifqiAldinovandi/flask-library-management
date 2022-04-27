@@ -163,7 +163,7 @@ def edit(borrowed_id):
 
     return render_template('edit.html', borrowed=borrowed)
 
-@app.route('/delete/<int:borrow_id>', methods=['GET', 'POST'])
+@app.route('/delete/<int:borrowed_id>', methods=['GET', 'POST'])
 def delete(borrow_id):
     if not session:
         return redirect(url_for('login'))
